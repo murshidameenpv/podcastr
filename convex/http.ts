@@ -48,7 +48,7 @@ http.route({
   method: "POST",
   handler: handleClerkWebhook,
 });
-
+//  ! operator to assert that the said value is not null or undefined
 const validateRequest = async (
   req: Request
 ): Promise<WebhookEvent | undefined> => {
